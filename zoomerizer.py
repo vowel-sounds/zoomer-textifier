@@ -16,7 +16,7 @@ def main():
             for x in words:
                 if len(x) < 3:
                     newWords.append(x)
-                if len(x) >= 3:
+                else:
                     newWords.append(zoomerizer(x))
             print('\n\n' + '----------')
             print(' '.join(map(str, newWords)) + '\n')
